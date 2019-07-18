@@ -816,15 +816,3 @@ function agama($a="agama"){
         return "";
     }
 }
-
-
-function mainbase_url($uri = ''){
-    $main = get_instance()->config->item('main_url');
-    return $main.$uri;
-}
-
-function mainsite_url($uri = ''){
-    $url_suffix = get_instance()->config->item('url_suffix');
-    $main = get_instance()->config->item('main_url');
-    return $main.$uri.$url_suffix;
-}
